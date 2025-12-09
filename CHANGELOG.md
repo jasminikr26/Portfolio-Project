@@ -22,6 +22,7 @@ the following form: YYYY.0M.0D.
 - Designed kernel and enhanced interfaces for NailAppointment component
 - Designed abstract class for NailAppointment component
 - Implemented toString, equals, and hashCode for NailAppointment
+- Designed kernel implementation for NailAppointment component
 
 
 ## [2025.09.19]
