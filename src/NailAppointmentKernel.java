@@ -7,7 +7,7 @@ import components.standard.Standard;
  *
  */
 
-public interface NailAppointmentKernal extends Standard<NailAppointment> {
+public interface NailAppointmentKernel extends Standard<NailAppointment> {
 
     /**
      * Sets the customer name for this appointment.
