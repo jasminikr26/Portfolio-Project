@@ -11,7 +11,7 @@
  * @author Jasmin Ikromova
  */
 
-public interface NailAppointmentSecondary extends NailAppointmentKernel {
+public interface NailAppointment extends NailAppointmentKernel {
 
     /**
      * Possible nail lengths for an appointment.
