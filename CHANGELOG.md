@@ -19,6 +19,8 @@ the following form: YYYY.0M.0D.
 ### Added
 
 - For Part 2 I made a source java file where I showed how NailAppointment component would look like and is very simple
+- Designed kernel and enhanced interfaces for NailAppointment component
+
 
 ## [2025.09.19]
 
