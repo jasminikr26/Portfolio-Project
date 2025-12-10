@@ -109,5 +109,14 @@ public interface NailAppointmentKernel extends Standard<NailAppointment> {
      */
     boolean hasService(String service);
 
+    /**
+     * Returns a copy of the set of services included in this appointment.
+     *
+     * @return a copy of the set of services
+     * @ensures <pre>
+     * getServices = [a copy of the set of services currently stored in this]  and
+     * this = #this
+     * </pre>
+     */
     Set<String> getServices();
 }
