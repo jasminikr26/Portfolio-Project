@@ -1,3 +1,4 @@
+import components.set.Set;
 import components.standard.Standard;
 
 /**
@@ -107,4 +108,6 @@ public interface NailAppointmentKernel extends Standard<NailAppointment> {
      * </pre>
      */
     boolean hasService(String service);
+
+    Set<String> getServices();
 }

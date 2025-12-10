@@ -38,7 +38,7 @@ public interface NailAppointment extends NailAppointmentKernel {
      * this = #this
      * </pre>
      */
-    int basePrice();
+    int getBasePrice();
 
     /**
      * Returns the total price for this appointment, including any add-on
@@ -51,7 +51,7 @@ public interface NailAppointment extends NailAppointmentKernel {
      * this = #this
      * </pre>
      */
-    int totalPrice();
+    int calculateTotalPrice();
 
     /**
      * Reports whether this appointment request is considered valid. For

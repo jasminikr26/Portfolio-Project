@@ -1,3 +1,5 @@
+import components.set.Set;
+
 /**
  * Secondary (abstract) class for {@code NailAppointment}.
  *
@@ -23,11 +25,11 @@ public abstract class NailAppointmentSecondary implements NailAppointment {
         int price = 0;
 
         if (this.getLength() == NailLength.SHORT) {
-            price = price + 10;
+            price = 10;
         } else if (this.getLength() == NailLength.MEDIUM) {
-            price = price + 15;
+            price = 15;
         } else {
-            price = price + 20;
+            price = 20;
         }
 
         if (this.getPolishType() == PolishType.GELX) {
@@ -43,22 +45,20 @@ public abstract class NailAppointmentSecondary implements NailAppointment {
     public int calculateTotalPrice() {
         int price = this.getBasePrice();
 
-        for (int i = 0; i < this.serviceCount(); i++) {
+        Set<String> temp = this.getServices();
+
+        while (temp.size() > 0) {
+            temp.removeAny();
             price = price + 5;
         }
-
         return price;
     }
 
     @Override
     public boolean isValidRequest() {
-        boolean result = false;
-
-        if (this.getCustomerName() != null
-                && this.getCustomerName().equals("")) {
-            result = true;
-        }
-        return result;
+        return this.getCustomerName() != null
+                && !this.getCustomerName().equals("")
+                && this.getLength() != null && this.getPolishType() != null;
     }
 
     @Override
@@ -70,11 +70,13 @@ public abstract class NailAppointmentSecondary implements NailAppointment {
         String service = "Services: ";
         String em = "";
 
-        if (this.serviceCount() == 0) {
+        Set<String> services = this.getServices();
+
+        if (services.size() == 0) {
             em = "none";
         } else {
-            for (int i = 0; i < this.serviceCount(); i++) {
-                em = em + ", " + this.services.get(i) + "\n";
+            while (services.size() > 0) {
+                em = em + services.removeAny() + ", \n";
             }
         }
 

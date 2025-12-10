@@ -8,6 +8,16 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.12.09]
+
+### Added
+
+- Designed test suite for NailAppointment Kernal and secondary methods
+- Designed two different use cases for NailAppointment component
+
+### Changed
+
+- several of the methods headers and added methods from Standard
 
 ## [2025.12.08]
 

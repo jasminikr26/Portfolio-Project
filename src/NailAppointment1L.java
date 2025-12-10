@@ -21,23 +21,28 @@ import components.set.Set1L;
  * [abstract services set]  = this.services
  * </pre>
  */
-public class NailAppointment1L {
+public class NailAppointment1L extends NailAppointmentSecondary {
 
     private String customerName;
     private NailAppointment.NailLength length;
     private NailAppointment.PolishType polishType;
     private Set<String> services;
 
-    private void createNewRep() {
-        this.customerName = "";
-        this.length = NailLength.SHORT;
-        this.polishType = PolishType.REGULAR;
-        this.services = new Set1L<>();
+    /**
+     * No-argument constructor.
+     */
+    public NailAppointment1L() {
+        this.createNewRep();
     }
 
-    public NailAppointment1() {
-        super();
-        this.createNewRep();
+    /**
+     * Creates a new valid representation.
+     */
+    private void createNewRep() {
+        this.customerName = "";
+        this.length = NailAppointment.NailLength.SHORT;
+        this.polishType = NailAppointment.PolishType.REGULAR;
+        this.services = new Set1L<>();
     }
 
     @Override
@@ -46,8 +51,27 @@ public class NailAppointment1L {
     }
 
     @Override
-    public final NailAppointment newInstance() {
-        return new NailAppointment1();
+    public NailAppointment newInstance() {
+        return new NailAppointment1L();
+    }
+
+    @Override
+    public void transferFrom(NailAppointment source) {
+        if (source == this) {
+            return;
+        }
+
+        this.customerName = source.getCustomerName();
+        this.length = source.getLength();
+        this.polishType = source.getPolishType();
+
+        this.services.clear();
+        Set<String> temp = source.getServices();
+        while (temp.size() > 0) {
+            String s = temp.removeAny();
+            this.services.add(s);
+        }
+        source.clear();
     }
 
     @Override
@@ -66,8 +90,8 @@ public class NailAppointment1L {
     }
 
     @Override
-    public NailLength getLength(){
-        return this.length
+    public NailLength getLength() {
+        return this.length;
     }
 
     @Override
@@ -88,7 +112,24 @@ public class NailAppointment1L {
     }
 
     @Override
-    public final boolean hasService(String service) {
+    public boolean hasService(String service) {
         return this.services.contains(service);
+    }
+
+    @Override
+    public Set<String> getServices() {
+        Set<String> copy = new Set1L<>();
+        Set<String> temp = new Set1L<>();
+
+        while (this.services.size() > 0) {
+            String s = this.services.removeAny();
+            copy.add(s);
+            temp.add(s);
+        }
+
+        while (temp.size() > 0) {
+            this.services.add(temp.removeAny());
+        }
+        return copy;
     }
 }
