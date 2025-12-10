@@ -31,7 +31,7 @@ public interface NailAppointmentKernel extends Standard<NailAppointment> {
      * this = #this
      * </pre>
      */
-    String customerName();
+    String getCustomerName();
 
     /**
      * Sets the nail length for this appointment.
@@ -55,7 +55,7 @@ public interface NailAppointmentKernel extends Standard<NailAppointment> {
      * this = #this
      * </pre>
      */
-    NailAppointment.NailLength getlength();
+    NailAppointment.NailLength getLength();
 
     /**
      * Sets the polish type for this appointment.
@@ -79,7 +79,7 @@ public interface NailAppointmentKernel extends Standard<NailAppointment> {
      * this = #this
      * </pre>
      */
-    NailAppointment.PolishType polishType();
+    NailAppointment.PolishType getPolishType();
 
     /**
      * Adds a service to this appointment (e.g., "design", "rhinestones").

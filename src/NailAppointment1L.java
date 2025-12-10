@@ -24,8 +24,8 @@ import components.set.Set1L;
 public class NailAppointment1L {
 
     private String customerName;
-    private NailLength length;
-    private PolishType polishType;
+    private NailAppointment.NailLength length;
+    private NailAppointment.PolishType polishType;
     private Set<String> services;
 
     private void createNewRep() {

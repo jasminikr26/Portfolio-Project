@@ -6,6 +6,8 @@
 
 ## Assignment Overview
 
+<!-- TODO: read the assignment overview then delete this comment -->
+
 Previously, you brainstormed three ideas, and hopefully you got some feedback as
 well. However, it's impossible to know how reasonable your design actually is
 without trying to implement it. Because you're only just learning our full
@@ -28,6 +30,8 @@ the more work you can put in now, the better.
 
 ## Assignment Checklist
 
+<!-- TODO: browse the checklist then delete this comment -->
+
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
 opening the TODOs window from the sidebar. The icon looks like a tree and will
@@ -49,6 +53,8 @@ to the tree diagram (you may remove this one as well):
 
 ## Assignment Learning Objectives
 
+<!-- TODO: read the assignment learning objectives then delete this comment -->
+
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
 what we're hoping you will learn through this particular aspect of the portfolio
@@ -61,6 +67,8 @@ project. Specifically, students should be able to:
 3. Assemble a minimal working implementation of one of their designs
 
 ## Assignment Rubric: 10 Points
+
+<!-- TODO: read the assignment rubric then delete this comment -->
 
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
@@ -106,7 +114,10 @@ Below is further rationale/explanation for the rubric items above:
 > to create a new design. In you do end up picking one at random, you should
 > disclose that here as well.
 
-I decided to continue editing the NailAppointment component because I want to learn coding a hobby of mine. I currently am running a nail business on insta and people DM me and it wastes a lot of time going back and forth waiting for replies so making this component would be a time saver since it has every request I need to confirm the appointment. And since its the end of the semester and I learned a lot about interfaces and enums, I can finally do this with ease.
+<!-- TODO: briefly argue your choice of design or design something
+new; then delete this comment -->
+
+I decided to continue making progress with the NailAppointment component because it is something I would like to use when clients want to book appointments with me. It will help me organize and waste less time going back n forth with potential clients over insta DM's. Since it is the end of the semester I have gained knowledge on interfaces and how kernal and secondary methods works. Also learned enumerations so I can use that for this component family.
 
 > Once you've argued your choice of design, make a branch in your new repo called
 > something like `proof-of-concept`. There are many ways to do this, but my

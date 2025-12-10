@@ -15,63 +15,65 @@ public abstract class NailAppointmentSecondary implements NailAppointment {
     /**
      * No-argument constructor.
      */
-    private NailAppointmentSecondary() {
+    public NailAppointmentSecondary() {
     }
 
-    public int getBasePrice(){
+    @Override
+    public int getBasePrice() {
         int price = 0;
 
-        if(this.length == NailLength.SHORT){
+        if (this.getLength() == NailLength.SHORT) {
             price = price + 10;
-        }
-        else if(this.length == NailLength.MEDIUM){
-            price = price + 15
-        }
-        else{
-            price = price + 20
+        } else if (this.getLength() == NailLength.MEDIUM) {
+            price = price + 15;
+        } else {
+            price = price + 20;
         }
 
-        if(this.polish == PolishType.GEL){
-            price = price + 10
-        }
-        else if(this.polish == PolishType.ACRYLIC){
-            price = price + 15
+        if (this.getPolishType() == PolishType.GELX) {
+            price = price + 10;
+        } else if (this.getPolishType() == PolishType.ACRYLIC) {
+            price = price + 15;
         }
 
         return price;
     }
 
+    @Override
     public int calculateTotalPrice() {
         int price = this.getBasePrice();
 
-        for (int i = 0; i < this.services.size(); i++) {
+        for (int i = 0; i < this.serviceCount(); i++) {
             price = price + 5;
         }
 
         return price;
     }
 
+    @Override
     public boolean isValidRequest() {
         boolean result = false;
 
-        if (this.customerName != null && this.customerName.equals("")) {
+        if (this.getCustomerName() != null
+                && this.getCustomerName().equals("")) {
             result = true;
         }
         return result;
     }
 
+    @Override
     public String receipt() {
-        String customer = "Customer: " + this.customerName + "\n";
+        String customer = "Customer: " + this.getCustomerName() + "\n";
         String length = "Length: " + this.getLength() + "\n";
         String type = "Polish: " + this.getPolishType() + "\n";
 
-        String services = "Services: ";
+        String service = "Services: ";
         String em = "";
 
-        if (this.services.size() == 0) {
+        if (this.serviceCount() == 0) {
             em = "none";
         } else {
-            for (int i = 0; i < this.services.size(); i++) {
+            for (int i = 0; i < this.serviceCount(); i++) {
                 em = em + ", " + this.services.get(i) + "\n";
             }
         }
@@ -80,7 +82,7 @@ public abstract class NailAppointmentSecondary implements NailAppointment {
         String totalPrice = "Total Price: $" + this.calculateTotalPrice()
                 + "\n";
 
-        String everything = customer + length + type + services + em + basePrice
+        String everything = customer + length + type + service + em + basePrice
                 + totalPrice;
 
         return everything;
@@ -102,13 +104,13 @@ public abstract class NailAppointmentSecondary implements NailAppointment {
 
         NailAppointment other = (NailAppointment) obj;
 
-        if (!this.customerName().equals(other.customerName())) {
+        if (!this.getCustomerName().equals(other.getCustomerName())) {
             return false;
         }
-        if (this.length() != other.length()) {
+        if (this.getLength() != other.getLength()) {
             return false;
         }
-        if (this.polishType() != other.polishType()) {
+        if (this.getPolishType() != other.getPolishType()) {
             return false;
         }
 
