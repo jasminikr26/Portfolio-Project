@@ -8,6 +8,41 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.12.09]
+
+### Added
+
+- Designed test suite for NailAppointment Kernal and secondary methods
+- Designed two different use cases for NailAppointment component
+
+### Changed
+
+- several of the methods headers and added methods from Standard
+
+## [2025.12.08]
+
+### Changed
+
+- updated the NailBusiness component and added new kernal and secondary methods
+-changed wellness tracker to a simplfied version of NailAppointment component where it focuses on adding customers, removing, and other basic stuff
+
+### Added
+
+- For Part 2 I made a source java file where I showed how NailAppointment component would look like and is very simple
+- Designed kernel and enhanced interfaces for NailAppointment component
+- Designed abstract class for NailAppointment component
+- Implemented toString, equals, and hashCode for NailAppointment
+- Designed kernel implementation for NailAppointment component
+
+
+## [2025.09.19]
+
+### Added
+
+- Designed a NailBusiness component
+- Designed a WellnessTracker component
+- Designed a GameInventory component
+
 ## [2024.12.30]
 
 - Added table-based rubrics to all 6 parts of the project

@@ -307,18 +307,18 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+I think I understand it better than just learning from lecture slides. I learn better when I physically apply what I am learning and this project was the perfect form of application. I learned in AP Comp Sci how to make classes and knew a little bit about interfaces but this process has cleared up any confusions I have.
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+I had a few gaps such as the interfaces extended another and I kept getting errors on how my abstract class wasn't implemented. I had to search online why I was getting those answers and also leanred how the extend and implement tree works a bit. I now know how to work with kernal and secondary methods.
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+It made me realize I have a lot more to learn and at the same time my hopes of becoming a software developer is dimming. I sometimes think this profession is not for me but at the same time I love coding and seeing my final work. Although I wanted to pursue art, I can show my creativity through my coding projects in the future. For now I am in the learning process.
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -326,29 +326,31 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+Creativity is definitly one of them. I had to brainstorm an idea of what my project was going to be like, I had to solve problems creatively, and implemented my creativity else where. Another skill I learned is patience. I have a horrible attention span and would skim through the instructions but I realized that it was a mistake because by skipping some instructions, it set me back a bit.
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+- creative problem solvingg
+- creative thinking
+- adaptibility
+- logical reasoning
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+I am definitly interested in continuing this project because I do want to make a link that my clients can use so I dont have to waste time going back n forth on DM's when they can book an appointment through the link. I would add stuff like dates and times
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+I would continue working on this current project and also other projects that I can utilize in my life. So far Grifiski would be my only mentor to contact for help.
 
 ### Changelog
 
-<!-- TODO: update CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -384,7 +386,6 @@ request merge (or at least tag your commits). This is not required.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
 
 Assuming that your project is in a GitHub repo somewhere and your changes are on
 a proof-of-concept branch, then what we'll want you to do is create a pull
